@@ -1,0 +1,319 @@
+<!DOCTYPE html  PUBLIC "-//W3C//DTD HTML 4.01//EN">
+<html>
+  
+  <head>
+    <title>寻书侦探：首页</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.19/css/dataTables.bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdn.datatables.net/1.10.19/css/jquery.dataTables.min.css">
+  
+  <script type="text/javascript" language="javascript" src="https://cdn.datatables.net/1.10.19/js/dataTables.bootstrap.min.js"></script>
+  <script type="text/javascript" src="https://cdn.datatables.net/1.10.19/js/jquery.dataTables.min.js"></script>
+
+    <script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+    <script type="text/javascript" src="http://netdna.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <link href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.min.css"
+    rel="stylesheet" type="text/css">
+    <link href="http://pingendo.github.io/pingendo-bootstrap/themes/default/bootstrap.css"
+    rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <!--text--> <link rel="stylesheet" href=text.css>
+    <!--navbar-->  <link rel="stylesheet" href="style_nav.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <!--map--><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.3.4/leaflet.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.3.4/leaflet.js"></script>
+    <script src="https://api.tiles.mapbox.com/mapbox.js/plugins/leaflet-markercluster/v0.4.0/leaflet.markercluster.js"></script>
+    <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/d3/3.4.11/d3.js"></script>
+    <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/c3/0.1.29/c3.js"></script>
+    <link href="//cdnjs.cloudflare.com/ajax/libs/c3/0.1.29/c3.css" rel="stylesheet" type="text/css"> 
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-153961747-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'UA-153961747-1',{'optimize_id':'GTM-NWVB4PV'});
+</script>
+  </head>
+
+    <body>
+        <!--navigation bar-->
+        <div id="nav" class="navbar navbar-default navbar-static-top">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-ex-collapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="#">寻书侦探</a>
+                </div>
+                <div class="collapse navbar-collapse" id="navbar-ex-collapse">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li class="active">
+                            <a href="#">首页</a>
+                        </li>
+                        <li>
+                            <a href="author.html">作家</a>
+                        </li>
+                        <li>
+                            <a href="novel.html">小说</a>
+                        </li>
+                        <li>
+                            <a href="film.html">影视化</a>
+                        </li>
+                        <li>
+                            <a href="bookstore.html">书店</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+<!--banner-->
+<img src="http://HallieZ.github.io/2019-COMM5961/Final_Project/picture/banner.jpg" style="background-repeat:no-repeat ;width:100%;
+height:100%;background-attachment: fixed;">
+
+<br><br>
+    <!--第一部分-->
+        <div class="section">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <h3 class="text-center">日本侦探小说作家介绍</h3>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-7">
+                        <div id="fullcarousel-example" data-interval="false" class="carousel slide"
+                        data-ride="carousel">
+                            <div class="carousel-inner">
+                                <div class="item active">
+                                    <a href="author.html"><img src="http://HallieZ.github.io/2019-COMM5961/Final_Project/picture/p_au_dongye.jpg"></a>
+                                </div>
+                                <div class="item">
+                                    <a href="author.html"><img src="http://HallieZ.github.io/2019-COMM5961/Final_Project/picture/p_au_cou.jpg"></a>
+                                    <div class="carousel-caption">
+                                        <h2>凑佳苗</h2>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <a href="author.html"><img src="http://HallieZ.github.io/2019-COMM5961/Final_Project/picture/p_au_daotian.jpg"></a>
+                                    <div class="carousel-caption">
+                                        <h2>岛田庄司</h2>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <a href="author.html"><img src="http://HallieZ.github.io/2019-COMM5961/Final_Project/picture/p_au_gongbu.jpg"></a>
+                                    <div class="carousel-caption">
+                                        <h2>宫部美雪</h2>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <a href="author.html"><img src="http://HallieZ.github.io/2019-COMM5961/Final_Project/picture/p_au_henggou.jpg"></a>
+                                    <div class="carousel-caption">
+                                        <h2>横沟正史</h2>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <a href="author.html"><img src="http://HallieZ.github.io/2019-COMM5961/Final_Project/picture/p_au_jingji.jpg"></a>
+                                    <div class="carousel-caption">
+                                        <h2>京极夏彦</h2>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <a href="author.html"><img src="http://HallieZ.github.io/2019-COMM5961/Final_Project/picture/p_au_lingshi.jpg"></a>a
+                                    <div class="carousel-caption">
+                                        <h2>绫辻行人</h2>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <a href="author.html"><img src="http://HallieZ.github.io/2019-COMM5961/Final_Project/picture/p_au_songben.jpeg"></a>
+                                    <div class="carousel-caption">
+                                        <h2>松本清张</h2>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <a href="author.html"><img src="http://HallieZ.github.io/2019-COMM5961/Final_Project/picture/p_au_tongye.jpg"></a>
+                                    <div class="carousel-caption">
+                                        <h2>桐野夏生</h2>
+                                    </div>
+                                </div>
+                            </div>
+                            <a class="left carousel-control" href="#fullcarousel-example" data-slide="prev"><i class="icon-prev fa fa-angle-left"></i></a>
+                            <a class="right carousel-control" href="#fullcarousel-example" data-slide="next"><i class="icon-next fa fa-angle-right"></i></a>
+                        </div>
+                    </div>
+                    <div class="col-md-5">
+                        <p>读者可以探寻九位日本侦探小说作家。&nbsp;
+                            <br>了解这些小说家的同时，查看该作家的相关小说信息。
+                            <br>
+                            <br>·东野圭吾    ·凑佳苗
+                            <br>
+                            <br>·松本清张    ·京极夏彦
+                            <br>
+                            <br>·岛田庄司    ·宫部美雪
+                            <br>
+                            <br>·绫辻行人    ·横沟正史
+                            <br>
+                            <br>·桐野夏生
+                            <br>寻书侦探所推荐书籍根据作者分类的数量情况见下表。</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br><br>
+<!--chart-->
+<div id="chart"></div><style>#chart{background-color:grey;}</style>
+        <script>
+    var items = [];
+    var i = 0;
+    var airtable_read_endpoint = "https://api.airtable.com/v0/app5018SLfPUcQe9o/Author_work?api_key=keySjh71YKM5KPkDF";
+    var dataSet = [];
+    $.getJSON(airtable_read_endpoint, function(result) {
+           $.each(result.records, function(key,value) {
+               items = [];
+                   items.push(value.fields.name);
+                   items.push(value.fields.Count);
+                   dataSet.push(items);
+                   console.log(items);
+            }); // end .each
+            console.log(dataSet);
+
+            var chart = c3.generate({
+                data: {
+                    columns: dataSet,
+                    type : 'bar'
+                },
+                axis: {
+                  x: {label: 'Author'},
+                  y: {label: '# of Works'}
+                },
+                bar: {
+                    title: "# of Works by Author:",
+                }
+    })});
+    </script>
+    
+
+
+        <br><br>
+     <!--第二部分-->
+        <div class="section">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <h3 class="text-center">日本侦探小说推荐</h3>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="text-center">
+                        <p>本部分分为按标签分类，按价格分类以及按字数分类。
+                            <br>主要针对阅读时间有限或在阅读上花费较少的阅读者。</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="text-center">
+                    <div class="col-md-4">
+                        <a href="novel.html"><img src="http://HallieZ.github.io/2019-COMM5961/Final_Project/picture/logo_label.png" class="text-center" width=60% height=60%></a>
+                        <p class="text-center">按标签分类</p>
+                    </div>
+                    <div class="col-md-4">
+                        <a href="novel.html"><img src="http://HallieZ.github.io/2019-COMM5961/Final_Project/picture/logo_num.png" class="text-center" width= 60% height=60%></a>
+                        <p class="text-center">按字数分类</p>
+                    </div>
+                    <div class="col-md-4">
+                        <a href="novel.html"><img src="http://HallieZ.github.io/2019-COMM5961/Final_Project/picture/yuan.png" class="text-center" width=60% height=60%></a>
+                        <p class="text-center">按价格分类</p>
+                </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <br><br>
+    <!--第三部分-->
+        <div class="section">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <h3 class="text-center">日本侦探影视作品推荐</h3>
+                        <p class="text-center">日本热衷于翻拍侦探小说。
+                            <br>对于空闲时间较少而想要尝试阅读日本侦探小说的读者，尝试一下翻拍的影视作品是另一种可能的选择。</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6">
+                        <a href="film.html"><img src="http://HallieZ.github.io/2019-COMM5961/Final_Project/picture/p_index_tv.png" class="img-responsive"></a>
+                        <p class="text-center">电视连续剧
+                            <br>（剧集长度为10至13集，每集时长45分钟）</p>
+                    </div>
+                    <div class="col-md-6">
+                        <a href="film.html"><img src="http://HallieZ.github.io/2019-COMM5961/Final_Project/picture/p_index_cinema.png" class="img-responsive"></a>
+                        <p class="text-center">电影
+                            <br>（时长2小时左右）</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <br><br>
+    <!--第四部分-->
+        <div class="section">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <h3 class="text-center">书店</h3>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <p class="text-center">热爱纸质阅读的阅读者可以选择线下实体书店。期望上海地区的读者能在最近的书店买到喜爱的侦探小说书籍。非上海地区的读者可以选择网上书店。
+                            <br>如果是习惯于线上阅读的阅读者可以选择电子阅读器。
+                            <br>&nbsp;在“书店”板块，阅读者可以搜索到具体的书店地址或网络地址。</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-4">
+                        <a href="bookstore.html"><img src="http://HallieZ.github.io/2019-COMM5961/Final_Project/picture/p_index_map.jpg" class="img-responsive"></a>
+                        <p class="text-center">线下书店
+                            <br>（仅限中国上海区域）</p>
+                    </div>
+                    <div class="col-md-4">
+                        <a href="bookstore.html"><img src="http://HallieZ.github.io/2019-COMM5961/Final_Project/picture/p_index_readapp.png" class="img-responsive"></a>
+                        <p class="text-center">电子阅读
+                            <br>（包括Kindle、QQ阅读、微信阅读、蜗牛阅读等）</p>
+                    </div>
+                    <div class="col-md-4">
+                        <a href="bookstore.html"><img src="http://HallieZ.github.io/2019-COMM5961/Final_Project/picture/p_index_readst.png" class="img-responsive"></a>
+                        <p class="text-center">线上书店
+                            <br>（包括当当网及淘宝各店）</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <br><br><br>
+<!--footer-->
+        <footer id="footer" class="section section-danger">
+                <div class="container">
+                    <div class="row">
+                        <div style="text-align:center">
+                            <h2>寻书侦探</h2>
+                            <p>如果您有建议或者问题，请通过邮件联系我们。
+                                <br>联系方式：noveldetective@sina.com
+                                <br>Copyright@香港中文大学 ZHU Ziyuan
+                                <br>
+                                <br>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+    </body>
+
+</html>

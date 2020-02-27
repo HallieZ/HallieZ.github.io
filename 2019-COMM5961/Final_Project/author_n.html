@@ -1,0 +1,126 @@
+<!DOCTYPE html  PUBLIC "-//W3C//DTD HTML 4.01//EN">
+<html>
+  
+  <head>
+    <title>寻书侦探：作者分类小说</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.19/css/dataTables.bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdn.datatables.net/1.10.19/css/jquery.dataTables.min.css">
+  
+  <script type="text/javascript" language="javascript" src="https://cdn.datatables.net/1.10.19/js/dataTables.bootstrap.min.js"></script>
+  <script type="text/javascript" src="https://cdn.datatables.net/1.10.19/js/jquery.dataTables.min.js"></script>
+
+    <script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+    <script type="text/javascript" src="http://netdna.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <link href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.min.css"
+    rel="stylesheet" type="text/css">
+    <link href="http://pingendo.github.io/pingendo-bootstrap/themes/default/bootstrap.css"
+    rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <!--text--> <link rel="stylesheet" href=text.css>
+    <!--navbar-->  <link rel="stylesheet" href="style_nav.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <!--map--><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.3.4/leaflet.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.3.4/leaflet.js"></script>
+    <script src="https://api.tiles.mapbox.com/mapbox.js/plugins/leaflet-markercluster/v0.4.0/leaflet.markercluster.js"></script>
+    <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/d3/3.4.11/d3.js"></script>
+    <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/c3/0.1.29/c3.js"></script>
+    <link href="//cdnjs.cloudflare.com/ajax/libs/c3/0.1.29/c3.css" rel="stylesheet" type="text/css"> 
+    <!--chart-->
+    <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/d3/3.4.11/d3.js"></script>
+    <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/c3/0.1.29/c3.js"></script>
+    <link href="//cdnjs.cloudflare.com/ajax/libs/c3/0.1.29/c3.css" rel="stylesheet" type="text/css">
+  </head>
+
+    <body>
+        <!--navigation bar-->
+        <div id="nav" class="navbar navbar-default navbar-static-top">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-ex-collapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a id="bd" class="navbar-brand" href="#">寻书侦探</a>
+                </div>
+                <div class="collapse navbar-collapse" id="navbar-ex-collapse">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li>
+                            <a href="index.html">首页</a>
+                        </li>
+                        <li class="active">
+                            <a href="#">作家</a>
+                        </li>
+                        <li>
+                            <a href="novel.html">小说</a>
+                        </li>
+                        <li>
+                            <a href="film.html">影视化</a>
+                        </li>
+                        <li>
+                            <a href="bookstore.html">书店</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+  <!--banner-->
+                    <img src="http://HallieZ.github.io/2019-COMM5961/Final_Project/picture/p_ah.jpg" 
+                    style="background-repeat:no-repeat ;width:100%;
+                    height:100%;background-attachment: fixed;">
+                    <div style="text-align:center">
+                            <h1>小说信息（按作家分类）</h1>
+                            <p>此部分介绍网站内九位作家的部分小说。<br>阅读者可在下表查阅小说基本信息。</p>
+                            <a href="author.html"><button class="btn btn-danger">返回作家推荐页</button></a>
+                            
+     <br><br>
+    <!--novel-->
+    <div>
+                            <form>
+                                <select id="selecter" class="form-control" onchange="table();">
+                                    <option value selected disabled>请选择作者。</option>
+                                    <option value="0">东野圭吾</option>
+                                    <option value="1">湊佳苗</option>
+                                    <option value="2">松本清张</option>
+                                    <option value="3">京极夏彦</option>
+                                    <option value="4">岛田庄司</option>
+                                    <option value="5">宫部美雪</option>
+                                    <option value="6">绫辻行人</option>
+                                    <option value="7">横沟正史</option>
+                                    <option value="8">桐野夏生</option>
+                                </select>
+                            </form>
+                            <br><br>
+                            <div id="table">
+                                <iframe id="iframe" class="airtable-embed" src="https://airtable.com/embed/shrEjDxnVBS2KAXeO?backgroundColor=orange&viewControls=on" frameborder="0" onmousewheel="" width="100%" height="400" style="background: transparent; border: 1px solid #ccc;"></iframe>
+                            </div>
+                            <script src=author.js></script>
+                    </div>
+
+<br><br><br>
+
+        <!--footer-->
+        <footer id="footer" class="section section-danger">
+                <div class="container">
+                    <div class="row">
+                        <div style="text-align:center">
+                            <h2>寻书侦探</h2>
+                            <p>如果您有建议或者问题，请通过邮件联系我们。
+                                <br>联系方式：noveldetective@sina.com
+                                <br>Copyright@香港中文大学 ZHU Ziyuan
+                                <br>
+                                <br>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+    </body>
+
+</html>

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+ <head>
+
+    <title>Sorting Ceremony</title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <style> body{background-color:burlywood;
+                  margin: auto;
+                  position: absolute;
+                  left: 50%;
+                  top:50%;
+                  transform: translate(-50%,-50%);}
+            h1{font-family:fantasy;
+              font-size: 4em;
+              color:crimson;}
+            p{font-family: fantasy;
+              font-size: 1.3em;
+              color:crimson;
+              margin:0.5px 0;
+              position:relative; left:150px; top:-130px;}
+            h2{font-family: fantasy;
+              font-size: 2em;
+              color:crimson;}
+            h4{font-family: fantasy;
+              font-size: 1.3em;
+              color:crimson;
+              position:relative;top:30px}
+            img#hat{position:relative; left:300px; top:-50px;}
+            button{margin:10px; position:relative; top:-30px}
+            button#hpm{position:relative; top:20px}
+            form#myForm{position:relative;top: -50px;}
+    </style>
+
+    <script type="text/javascript">
+        var nx=prompt("Hello, little wizard, though you are still a muggle now. What is your name?");
+        if(nx!=null){alert("Dear "+nx+" ! Welcome to Hogwarts! Before you study here, you need to be sorted to a college."); }
+        else{alert("Hi, my friend. Welcome to Hogwarts! Before you study here, you need to be sorted to a college.");  }
+      </script>
+      <script src='math.js'></script>
+
+ </head>
+
+ <body>
+    <br>
+    <br>
+    <br>
+    <br>
+    <h1>Sorting Ceremony</h1>
+    <h2>for Harry Potter fans</h2>
+    <img id="hog" src="hogwarts.png" width="undefined" height="150" hspace="0" vspace="0" >
+            <div> 
+                    <p>Welcome to Hogwarts.Please put on the sorting hat.</p>
+                    <p>At the beginning of the ceremony, you can ask questions to the hat.</p>
+                    <p>This hat is also clever enough to solve maths problems. </p>
+            </div>
+            <form id="myForm">
+                <div class="form-group">
+                  <div class="f1">
+                      <label for="1st">Enter 1st number:</label>
+                      <input type="text" class="form-control" name='1st number'>
+                  </div>
+                  <div class="f2">
+                      <label for="2nd">Enter 2nd number:</label>
+                      <input type="text" class="form-control" name='2nd number'>
+                  </div>   
+               <p id="hpm">Look! It can plus all the values between the number you give.</p>  
+               <button type="button" class="btn btn-primary" onclick="ask_answer()">Show me the result!</button>
+            <div>        
+                    <h4>Now, you can see how clever the hat is.</h4>
+                    <h4>Tell him what kind of person you want to be.</h4>
+                    <h4>Then he will tell you which college you will go.</h4>
+                    <img id="hat" src="hat.png" width="undefined" height="302" border="0" hspace="0" vspace="0">
+            </div>
+           			
+    <button type="button" class="btn btn-danger" onclick="gry"><a href="Gryffindor.html">Auror</a></button>
+    <button type="button" class="btn btn-success" onclick="sly"><a href="Slytherin.html"> Office in the ministry of magic</a></button>
+    <button type="button" class="btn btn-warning" onclick="hul"><a href="Hufflepuff.html">Magizoologist who love magic animals</a></button>
+    <button type="button" class="btn btn-info" onclick="rav"><a href="Ravenclaw.html">Scholars of certain magic areas</a></button>
+                    
+ </body>
+</html>
