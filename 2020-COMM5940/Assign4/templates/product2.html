@@ -1,0 +1,18 @@
+{% extends "base.html" %}
+{% block content %}
+
+   {% for item in dataset %}
+        {% if loop.index == 1 %}{% set counter = ( counter | default(1) ) %}{% endif %}
+        {% if counter == 1 %}<div class="row">{% endif %}
+        <div class="col-md-4">
+          <div class="card mb-4 shadow-sm">
+            <img width="100%" height="200px" src="{{ item['poster'] }}" style="object-fit:cover">
+            <div class="card-body">
+              <p>片名:{{ item['name']}}<br>演员:{{ item['cast'] }}<br>类型:{{ item['type'] }}<br>评分:{{ item['rating'] }}</p>
+            </div>
+          </div>
+        </div> 
+       {% if counter == 3 %}</div><!--end row-->{%  set counter = ( counter | default(1) ) %}{% else %}{% set counter = ( counter | default(0) ) + 1 %}{% endif %}
+      {% endfor %} 
+
+{% endblock %}
