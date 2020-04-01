@@ -1,22 +1,17 @@
 {% extends "news_base.html" %}
-{% extends "footer.html"}
 {% block content %}
-{% for news in news.items %}
+
+{% for news in dataset %}
        {% if loop.index == 1 %}{% set counter = ( counter | default(1) ) %}{% endif %}
         {% if counter == 1 %}<div class="row">{% endif %}
         <div class="col-md-4">
           <div class="card mb-4 shadow-sm">
-              <img width="100%" height="200px" src="{{news.cover}}" style="object-fit:cover">
-              <div class="card-body">
-              <h6 style='color:rgb(85, 85, 85)'>{{news.title}}<h6>
-              <p style='color:gray'>{{news.brief}}</p>
-              </div>
+              <img width="100%" height="200px" src="{{ news['cover'] }}" style="object-fit:cover">
+              <div class="card-body"><h6 style='color:rgb(85, 85, 85)'>{{ news['title'] }}<h6><p style='color:gray'>{{ news['brief'] }}</p></div>
               <div class="d-flex justify-content-between align-items-center">
-                <div class="btn-group">
-                  <button type="button" class="btn btn-sm btn-outline-secondary">详情</button>
-                </div>
+                <div class="btn-group"><a href="{{ news['url'] }}"><button type="button" class="btn btn-sm btn-outline-secondary">详情</button></a></div>
               </div>
-        </div>
+          </div>
         </div> 
        {% if counter == 3 %}</div><!--end row-->{%  set counter = ( counter | default(1) ) %}{% else %}{% set counter = ( counter | default(0) ) + 1 %}{% endif %}
   {% endfor %}

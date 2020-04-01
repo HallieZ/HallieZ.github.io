@@ -1,5 +1,8 @@
 <head>
     <title>LinkU:动态</title>
+    <link rel="stylesheet" href="{{url_for('static', filename='css/bootstrap.min.css')}}">
+    <script src="{{url_for('static', filename='js/jquery.min.js')}}"></script>
+    <script src="{{url_for('static', filename='js/bootstrap.min.js')}}"></script>    
 </head>
 {% extends "footer.html"}
 {% block content %}
@@ -19,7 +22,7 @@
             <div class="collapse navbar-collapse" id="navbar-ex-collapse">
                 <ul class="nav navbar-nav navbar-left">
                     <li class="active">
-                        <a href="/all">全部</a> 
+                        <a href="/">全部</a> 
                     </li>
                     <li>
                         <a href="/exp">运营心法</a>
